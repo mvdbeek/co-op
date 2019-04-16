@@ -1,0 +1,5 @@
+{{- if .Site.Params.contact.tel -}}
+<i class="fa fa-phone" aria-hidden="true"></i>&nbsp;<a class="tel" href="{{ .Site.Params.contact.tel | safeURL }}">{{ .Site.Params.contact.telephone }}</a>
+{{- else -}}
+<i class="fa fa-phone" aria-hidden="true"></i>&nbsp;<a class="tel" href="tel:{{ .Site.Params.contact.telephone }}">{{ .Site.Params.contact.telephone }}</a>
+{{- end -}}

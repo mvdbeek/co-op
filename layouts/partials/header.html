@@ -1,0 +1,12 @@
+<div class="underline">
+<header id="page-header">
+	{{- if .Site.Params.logo }}
+	<a href="/"><img src="{{.Site.Params.logo | relURL}}" alt="{{ .Site.Title }}"/></a>
+	{{- else }}
+	<h1>
+		<a href="/" class="site-title">{{ .Site.Title }}</a>
+	</h1>
+	{{- end }}
+	{{- partial "nav.html" . }}
+</header>
+</div>

@@ -1,0 +1,48 @@
+baseURL      = "http://example.org/"
+languageCode = "en-us"
+title        = "Co-op theme example"
+
+[author]
+
+name  = "Sam Whited"
+email = "sam@samwhited.com"
+uri   = "https://blog.samwhited.com"
+
+[permalinks]
+  post = "/blog/:year-:month-:day-:slug/"
+
+[params]
+
+logo         = "images/logo.svg"
+description  = "An example site for the Co-op theme for Hugo."
+
+[params.contact]
+
+address   = "123 Fake Street, Clarkesville, GA 30523"
+email     = "soque@example.net"
+geo       = "geo:34.6103,-83.5421"
+telephone = "+1 (555) 867-5309"
+tel       = "tel:+15558675309"
+muc       = "soque@muc.example.net"
+
+[taxonomies]
+
+tag    = "tags"
+series = "series"
+
+[menu]
+
+	[[menu.main]]
+	name   = "Blog"
+	URL    = "/blog"
+	weight = 1
+
+	[[menu.main]]
+	name   = "Flex"
+	URL    = "#flex"
+	weight = 2
+
+	[[menu.main]]
+	name   = "About"
+	URL    = "#about"
+	weight = 3
