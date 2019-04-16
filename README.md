@@ -221,7 +221,7 @@ For information about development and submitting patches to this theme, see
 Licensed under the BSD 2 Clause License ([LICENSE] or
 https://opensource.org/licenses/BSD-2-Clause)
 
-[LICENSE]: https://git.sr.ht/~samwhited/co-op/tree/master/LICENSE.md
+[LICENSE]: https://git.sr.ht/~samwhited/co-op/tree/master/LICENSE
 
 
 ### Contribution
