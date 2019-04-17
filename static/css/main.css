@@ -255,11 +255,11 @@ footer {
 	flex-direction: column;
 }
 
-form[name="contact"] {
+.flex-row form {
 	width: 100%;
 }
 
-form[name="contact"] input, form[name="contact"] textarea {
+.flex-row form input, .flex-row form textarea {
 	width: 100%;
 }
 
@@ -349,8 +349,7 @@ form[name="contact"] input, form[name="contact"] textarea {
 		flex-direction: row;
 	}
 
-	form[name="contact"] {
-		width: 50%;
+	.flex-row > *:not(:last-child) {
 		margin-right: 2rem;
 	}
 }
