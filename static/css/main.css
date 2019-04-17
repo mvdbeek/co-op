@@ -128,11 +128,10 @@ select:focus {
 	outline: 0;
 }
 
-input,
-textarea,
-select,
-fieldset {
-margin-bottom: 1.5rem; }
+input, textarea, select, fieldset {
+	margin-bottom: 1.5rem;
+	width: 100%;
+}
 
 pre, blockquote, dl, figure, table, p, ul, ol, form {
 	margin-bottom: 2.5rem;
@@ -259,10 +258,6 @@ footer {
 	width: 100%;
 }
 
-.flex-row form input, .flex-row form textarea {
-	width: 100%;
-}
-
 .hero {
 	align-items: center;
 	background-color: var(--color-light-bg);
@@ -281,6 +276,13 @@ footer {
 .hero .content {
 	margin: 0 auto;
 	max-width: calc(100% - (2 * var(--padding-mobile)));
+}
+
+.hero form {
+	margin: 0 auto;
+	max-width: calc(var(--max-content-width) - 50%);
+	text-align: left;
+	width: 100%;
 }
 
 .hero + .caption {
