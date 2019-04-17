@@ -271,7 +271,6 @@ footer {
 	color: var(--color-light-bg);
 	display: flex;
 	left: calc(-50vw + 50%);
-	min-height: 100%;
 	overflow: hidden;
 	position: relative;
 	text-align: center;
