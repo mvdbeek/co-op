@@ -253,10 +253,6 @@ footer {
 	padding: 2rem 0;
 }
 
-.triblock, .biblock {
-	width: 100%;
-}
-
 .flex-row {
 	display: flex;
 	flex-direction: column;
@@ -334,14 +330,6 @@ footer {
 		margin: 0 var(--padding-page);
 	}
 	
-	.triblock {
-		width: 30%;
-	}
-
-	.biblock {
-		width: 49%;
-	}
-
 	.flex-row {
 		display: flex;
 		flex-direction: row;
