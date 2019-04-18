@@ -189,15 +189,15 @@ name (eg. `car` or `tree`).
 %}}Content{{% /hero %}}:** inserts a screen-width div with an optional
 background color, cover image, caption, and content.
 
-**{{% flex %}}Content{{% /flex %}}:** Used to put several elements into a flex
-box.
-The parameters haven't been stabilized yet so they have not been listed here.
-For now it only works for rows.
+**{{% flex justify-content="" %}}Content{{% /flex %}}:** Used to put several
+elements into a flex box.
+Values for `justify-content` can be found on the [MDN article] about it.
 
 Any shortcodes in the theme that are not documented here have not been finalized
 and may be removed at any time without warning.
 
 [Fork Awesome]: https://forkaweso.me/Fork-Awesome/
+[MDN article]: https://developer.mozilla.org/en-US/docs/Web/CSS/justify-content
 
 
 ### Blocks

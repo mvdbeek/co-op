@@ -1,7 +1,7 @@
 <div class="content flex-row" style="
-                          {{- if .Get "direction"}}flex-direction: {{.Get "direction"}};{{ end -}}
-                          {{- if .Get "align-items" }}align-items: {{ .Get "align-items" }};{{ end -}}
-                          {{- if .Get "justify-content" }}justify-content: {{ .Get "justify-content" }};{{ end -}}
-                          ">
+{{- if .Get "justify-content" -}}
+	justify-content: {{ .Get "justify-content" }};
+{{- end -}}
+">
 	{{ .Inner }}
 </div>
