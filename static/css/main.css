@@ -268,9 +268,12 @@ footer {
 	left: calc(-50vw + 50%);
 	overflow: hidden;
 	position: relative;
-	text-align: center;
 	text-shadow: 1px 1px 2px var(--color-dark-bg);
 	width: 100vw;
+}
+
+.hero h1, .hero h2, .hero h3, .hero h4, .hero h5, .hero h6 {
+	text-align: center;
 }
 
 .hero .content {
@@ -373,6 +376,7 @@ button.primary:hover, a.button.primary:hover, input[type="button"].primary:hover
 }
 
 .center {
+	display: block !important;
 	margin: 0 auto;
 }
 
