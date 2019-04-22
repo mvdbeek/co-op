@@ -173,11 +173,11 @@ aside .vcard a {
 	color: var(--color-light-bg);
 }
 
-aside .vcard > span.social {
+aside .vcard > span.icons {
 	margin-left: 2rem;
 }
 
-aside .vcard > span.social > a {
+aside .vcard > span.icons > a {
 	margin-left: 0.5rem;
 }
 

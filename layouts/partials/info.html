@@ -19,43 +19,7 @@
 			{{- partial "muc.html" . -}}
 		</span>
 		{{- end}}
-		<span class="social">
-		{{- if .Site.Params.Social.ig }}
-		<a href="https://www.instagram.com/{{ .Site.Params.Social.ig }}" title="Instagram">
-			<i class="fa fa-instagram" aria-hidden="true"></i>
-		</a>
-		{{- end }}
-		{{- if .Site.Params.Social.reddit }}
-		<a href="https://www.reddit.com/user/{{ .Site.Params.Social.reddit }}" title="Reddit">
-			<i class="fa fa-reddit-alien" aria-hidden="true"></i>
-		</a>
-		{{- end }}
-		{{- if .Site.Params.Social.fb }}
-		<a href="https://www.facebook.com/{{ .Site.Params.Social.fb }}" title="Facebook">
-			<i class="fa fa-facebook-official" aria-hidden="true"></i>
-		</a>
-		{{- end }}
-		{{- if .Site.Params.Social.flickr }}
-		<a href="https://www.flickr.com/photos/{{ .Site.Params.Social.flickr }}" title="Flickr">
-			<i class="fa fa-flickr" aria-hidden="true"></i>
-		</a>
-		{{- end }}
-		{{- if .Site.Params.Social.youtube }}
-		<a href="https://www.youtube.com/channel/{{ .Site.Params.Social.youtube }}" title="YouTube">
-			<i class="fa fa-youtube-square" aria-hidden="true"></i>
-		</a>
-		{{- end }}
-		{{- if .Site.Params.Social.vimeo }}
-		<a href="https://vimeo.com/{{ .Site.Params.Social.vimeo }}" title="Vimeo">
-			<i class="fa fa-vimeo-square" aria-hidden="true"></i>
-		</a>
-		{{- end}}
-		{{- if .RSSLink }}
-		<a href="{{ .RSSLink }}" title="RSS">
-			<i class="fa fa-rss-square" aria-hidden="true"></i>
-		</a>
-		{{- end }}
-		</span>
+		{{- partial "icons.html" . }}
 	</address>
 </aside>
 {{- end }}

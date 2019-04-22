@@ -127,19 +127,45 @@ without warning.
 
 The following partials may be overridden:
 
+**addr.html:** prints `.Site.Params.contact.address` with the link
+`.Site.Params.contact.geo` if present. See also the shortcode with the same
+name.
+
+**css.html:** empty partial included immediately after the main CSS file.
+
+**email.html:** creates a `mailto:` link to `.Site.Params.contact.email`. See
+also the shortcode with the same name.
+
 **fonts.html:** contains font loading (in case you want to load fonts from a CDN
 instead of locally).
 
 **footer.html:** the page footer; defaults to empty, this should probably
 contain a single `<footer/>` element.
 
+**head.html:** the entire `<head/>` element; this should probably be left alone.
+
 **header.html:** the page header; shows the logo and navigation by default.
 
-**head.html:** the entire `<head/>` element; this should probably be left alone.
+**icons.html:** the icon area at the end of the info bar. This is normally a
+single span with the `icons` class applied and contains a number of icons for,
+social media, RSS, etc. By default it contains an RSS icon and link.
+
+**info.html:** the info bar at the top of every page as a single `<aside/>`
+element; this should probably be left alone.
 
 **meta.html:** empty partial included immediately after the meta tags.
 
-**css.html:** empty partial included immediately after the main CSS file.
+**muc.html:** creates an `xmpp:` URI link to `.Site.Params.contact.muc` with the
+query set to `?join`.
+
+**nav.html:** the main navigation links in a single `<nav/>` element generated
+from `.Site.Menus.main`; this should probably be left alone.
+
+**phone.html:** prints `.Site.Params.contact.telephone` or links it with a
+`tel:` URI if `.Site.Params.contact.tel` is specified.
+
+**post-author-list.html:** creates a comma delimated list of author names for
+the blog post footer.
 
 **post-footer.html:** contains the blog post footer with tags, authors, and the
 date in a single `<footer/>` element.
@@ -149,28 +175,6 @@ the tag name).
 
 **post-tag-list.html:** creates a comma delimited list of tag links for the blog
 post footer by applying `post-tag-link.html` (`.` will be a slice of tag names).
-
-**post-author-list.html:** creates a comma delimated list of author names for
-the blog post footer.
-
-**info.html:** the info bar at the top of every page as a single `<aside/>`
-element; this should probably be left alone.
-
-**nav.html:** the main navigation links in a single `<nav/>` element generated
-from `.Site.Menus.main`; this should probably be left alone.
-
-**email.html:** creates a `mailto:` link to `.Site.Params.contact.email`. See
-also the shortcode with the same name.
-
-**addr.html:** prints `.Site.Params.contact.address` with the link
-`.Site.Params.contact.geo` if present. See also the shortcode with the same
-name.
-
-**muc.html:** creates an `xmpp:` URI link to `.Site.Params.contact.muc` with the
-query set to `?join`.
-
-**phone.html:** prints `.Site.Params.contact.telephone` or links it with a
-`tel:` URI if `.Site.Params.contact.tel` is specified.
 
 ### Shortcodes
 
