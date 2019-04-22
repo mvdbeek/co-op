@@ -37,17 +37,16 @@ section.
   <button type="submit" class="primary">Send</button>
 </form>
 
-Phone
-: {{% phone %}}
-
-Email
-: {{% email %}}
-
-Chat room
-: {{% muc %}}
-
-Location
-: <iframe frameborder="0"
+<dl>
+<dt>Phone</dt>
+<dd>{{% phone %}}</dd>
+<dt>Email</dt>
+<dd>{{% email %}}</dd>
+<dt>Chat room</dt>
+<dd>{{% muc %}}</dd>
+<dt>Location</dt>
+<dt>
+<iframe frameborder="0"
 				scrolling="no"
 				marginheight="0"
 				marginwidth="0"
@@ -56,6 +55,8 @@ Location
 				src="https://www.openstreetmap.org/export/embed.html?bbox=-83.5679340362549%2C34.56177824932235%2C-83.516263961792%2C34.65883977236554&amp;layer=mapnik"></iframe>
 <br/>
 <a style="font-size: small" href="https://www.openstreetmap.org/#map=14/34.6103/-83.5421&amp;layers=N">View Larger Map</a>
+</dt>
+</dl>
 
 {{% /flex %}}
 
