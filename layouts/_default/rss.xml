@@ -1,4 +1,13 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  {{ safeHTML "<!--" }}
+    Hi!
+
+    This page is meant to be read by a feed reader program.
+    Using this file updates to our blog can come straight to you without
+    requiring that you visit our web page!
+
+    We recommend using https://www.inoreader.com if you need a web based reader.
+  -->
   <channel>
     <title>{{ if eq  .Title  .Site.Title }}{{ .Site.Title }}{{ else }}{{ with .Title }}{{.}} on {{ end }}{{ .Site.Title }}{{ end }}</title>
     <link>{{ .Permalink }}</link>
