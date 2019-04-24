@@ -181,6 +181,10 @@ aside .vcard > span.icons > a {
 	margin-left: 0.5rem;
 }
 
+span.icons > a {
+	text-decoration: none;
+}
+
 aside span {
 	margin: 0 0 0 1rem;
 }
