@@ -340,6 +340,11 @@ footer {
 	.flex-row {
 		display: flex;
 		flex-direction: row;
+		flex-wrap: wrap;
+	}
+
+	.flex-row > * {
+		flex: 1 0 calc(33% - 2rem);
 	}
 
 	.flex-row > *:not(:last-child) {
