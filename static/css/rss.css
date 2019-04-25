@@ -1,8 +1,7 @@
 * {
 	display: block;
 }
-a, abbr, acronym, b, big, br, cite, code, em, i, img, small, span, strong, sub, sup {
-
+a, abbr, acronym, b, big, br, cite, code, em, i, img, q, small, span, strong, sub, sup {
 	display: inline;
 }
 html > head, html > script {
