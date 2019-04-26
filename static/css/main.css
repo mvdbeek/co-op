@@ -206,6 +206,11 @@ aside address a {
 
 #page-header h1 {
 	flex-basis: 100%;
+	margin: 0;
+}
+
+#page-header h1 img {
+	margin: 0;
 }
 
 #page-header img {
