@@ -1,12 +1,12 @@
 <div class="underline">
 <header id="page-header">
-	{{- if .Site.Params.logo }}
-	<a href="{{ .Site.BaseURL }}"><img src="{{.Site.Params.logo | relURL}}" alt="{{ .Site.Title }}"/></a>
-	{{- else }}
 	<h1>
+	{{- if .Site.Params.logo -}}
+	<a href="{{ .Site.BaseURL }}"><img src="{{.Site.Params.logo | relURL}}" alt="{{ .Site.Title }}"/></a>
+	{{- else -}}
 		<a href="{{ .Site.BaseURL }}" class="site-title">{{ .Site.Title }}</a>
+	{{- end -}}
 	</h1>
-	{{- end }}
 	{{- partial "nav.html" . }}
 </header>
 </div>
