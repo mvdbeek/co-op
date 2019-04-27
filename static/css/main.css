@@ -159,38 +159,31 @@ a:not(.button):hover {
 	color: var(--color-accent) !important;
 }
 
-aside .vcard {
-	align-items: flex-end;
+aside.info {
 	background-color: var(--color-dark-bg);
 	color: var(--color-light-bg);
-	display: flex;
-	flex-direction: column;
-	justify-content: flex-end;
 	padding: 0 var(--padding-mobile);
 }
 
-aside .vcard a {
+aside.info a {
 	color: var(--color-light-bg);
-}
-
-aside .vcard > span.icons {
-	margin-left: 2rem;
-}
-
-aside .vcard > span.icons > a {
-	margin-left: 0.5rem;
-}
-
-span.icons > a {
 	text-decoration: none;
+}
+
+aside.info, aside.info .vcard {
+	align-items: flex-end;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: flex-end;
+}
+
+aside.info .icons > a {
+	margin-left: 0.5rem;
 }
 
 aside span {
 	margin: 0 0 0 1rem;
-}
-
-aside address a {
-	text-decoration: none;
 }
 
 #page-header {
@@ -312,8 +305,7 @@ footer {
 }
 
 @media (min-width: 760px) {
-	aside .vcard {
-		flex-direction: row;
+	aside.info {
 		padding: 0 var(--padding-page);
 	}
 

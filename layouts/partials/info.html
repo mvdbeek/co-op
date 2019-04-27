@@ -1,25 +1,6 @@
-{{- if or .Site.Params.contact }}
-<aside>
-	<address class="vcard">
-		{{- if .Site.Params.contact.address }}
-			{{- partial "addr.html" . -}}
-		{{- end }}
-		{{- if .Site.Params.contact.telephone }}
-		<span>
-			{{- partial "phone.html" . -}}
-		</span>
-		{{- end }}
-		{{- if .Site.Params.Contact.email }}
-		<span>
-			{{- partial "email.html" . -}}
-		</span>
-		{{- end}}
-		{{- if .Site.Params.contact.muc }}
-		<span>
-			{{- partial "muc.html" . -}}
-		</span>
-		{{- end}}
-		{{- partial "icons.html" . }}
-	</address>
+<aside class="info">
+	{{- with .Site.Params.contact }}
+	{{- partial "vcard.html" . }}
+	{{- end }}
+	{{- partial "icons.html" . }}
 </aside>
-{{- end }}

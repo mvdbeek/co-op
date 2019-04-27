@@ -127,14 +127,13 @@ without warning.
 
 The following partials may be overridden:
 
-**addr.html:** prints `.Site.Params.contact.address` with the link
-`.Site.Params.contact.geo` if present. See also the shortcode with the same
-name.
+**addr.html:** prints `.address` with the link `.geo` if present. See also the
+shortcode with the same name.
 
 **css.html:** empty partial included immediately after the main CSS file.
 
-**email.html:** creates a `mailto:` link to `.Site.Params.contact.email`. See
-also the shortcode with the same name.
+**email.html:** creates a `mailto:` link to `.`. See also the shortcode with the
+same name.
 
 **fonts.html:** contains font loading (in case you want to load fonts from a CDN
 instead of locally).
@@ -148,21 +147,21 @@ contain a single `<footer/>` element.
 
 **icons.html:** the icon area at the end of the info bar. This is normally a
 single span with the `icons` class applied and contains a number of icons for,
-social media, RSS, etc. By default it contains an RSS icon and link.
+social media, RSS, etc. By default it only contains an RSS icon and link.
 
 **info.html:** the info bar at the top of every page as a single `<aside/>`
-element; this should probably be left alone.
+element. This should probably be left alone but you can override it to remove
+the info bar completely.
 
 **meta.html:** empty partial included immediately after the meta tags.
 
-**muc.html:** creates an `xmpp:` URI link to `.Site.Params.contact.muc` with the
-query set to `?join`.
+**muc.html:** creates an `xmpp:` URI link to `.` with the query set to `?join`.
 
 **nav.html:** the main navigation links in a single `<nav/>` element generated
 from `.Site.Menus.main`; this should probably be left alone.
 
-**phone.html:** prints `.Site.Params.contact.telephone` or links it with a
-`tel:` URI if `.Site.Params.contact.tel` is specified.
+**phone.html:** prints `.telephone` or links it with a `tel:` URI if `.tel` is
+specified.
 
 **post-author-list.html:** creates a comma delimated list of author names for
 the blog post footer.
@@ -178,15 +177,18 @@ post footer by applying `post-tag-link.html` (`.` will be a slice of tag names).
 
 ### Shortcodes
 
-**{{% email %}}:** executes the `email.html` partial.
+**{{< email >}}:** executes the `email.html` partial with
+`.Site.Params.contact.email`.
 
-**{{% addr %}}:** executes the `addr.html` partial.
+**{{< addr >}}:** executes the `addr.html` partial with `.Site.Params.contact`.
 
-**{{% muc %}}:** executes the `muc.html` partial.
+**{{< muc >}}:** executes the `muc.html` partial with
+`.Site.Params.contact.muc`.
 
-**{{% phone %}}:** executes the `phone.html` partial.
+**{{< phone >}}:** executes the `phone.html` partial with
+`.Site.Params.contact`.
 
-**{{% icon name="icon-name" %}}:** inserts a [Fork Awesome] icon with the given
+**{{< icon name="icon-name" >}}:** inserts a [Fork Awesome] icon with the given
 name (eg. `car` or `tree`).
 
 **{{% hero caption="markdown" bgcolor="#000" height="80vh" img="background.jpg"
