@@ -182,15 +182,11 @@ aside.info, aside.info .vcard {
 	text-decoration: none;
 }
 
-aside.info .icons > a {
-	margin-left: 0.5rem;
-}
-
 .icons > a:not(:first-of-type) {
 	margin-left: 0.5rem;
 }
 
-aside span {
+aside.info span {
 	margin: 0 0 0 1rem;
 }
 
