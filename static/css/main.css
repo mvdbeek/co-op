@@ -178,7 +178,15 @@ aside.info, aside.info .vcard {
 	justify-content: flex-end;
 }
 
+.icons > a {
+	text-decoration: none;
+}
+
 aside.info .icons > a {
+	margin-left: 0.5rem;
+}
+
+.icons > a:not(:first-of-type) {
 	margin-left: 0.5rem;
 }
 
