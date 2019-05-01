@@ -1,4 +1,6 @@
-{{ safeHTML "<?" }}xml-stylesheet type="text/xsl" href="{{ "xsl/rss.xsl" | absURL }}"?>
+{{- with $style := resources.Get "xsl/rss.xsl" | resources.ExecuteAsTemplate "xsl/rss.xsl" . | resources.Fingerprint "sha256"}}
+{{ safeHTML "<?" }}xml-stylesheet type="text/xsl" href="{{ $style.Permalink }}"?>
+{{- end }}
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   {{ safeHTML "<!--" }}
     Hi!

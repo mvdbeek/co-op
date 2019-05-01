@@ -5,13 +5,11 @@
  */
 
 :root {
-	--color-accent: #d5262b;
-	--color-accent-secondary: #81b3ae;
-	--color-accent-subtle: #575757;
-	--color-caption-txt: #575757;
-	--color-dark-bg: #232432;
-	--color-dark-txt: #232432;
-	--color-light-bg: #fcfcfc;
+	--color-accent: {{ .Param "Style.accentPrimary" | default "#81a1c1" }};
+	--color-accent-secondary: {{ .Param "Style.accentSecondary" | default "#a3be8c" }};
+	--color-accent-subtle: {{ .Param "Style.accentSubtle" | default "#575757" }};
+	--color-dark-bg: {{ .Param "Style.backgroundDark" | default "#232432" }};
+	--color-light-bg: {{ .Param "Style.backgroundLight" | default "#fcfcfc" }};
 	--max-content-width: 900px;
 	--padding-mobile: 1rem;
 	--padding-page: 3rem;
@@ -34,7 +32,7 @@ html {
 
 body {
 	background-color: var(--color-light-bg);
-	color: var(--color-dark-txt);
+	color: var(--color-dark-bg);
 	display: flex;
 	flex-direction: column;
 	font-family: "Overpass", "Open Sans", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -152,7 +150,7 @@ pre {
 }
 
 body a {
-	color: var(--color-dark-txt);
+	color: var(--color-dark-bg);
 	transition: all 0.2s ease;
 }
 
@@ -254,7 +252,7 @@ main[role="main"] {
 }
 
 body > footer {
-	color: var(--color-caption-txt);
+	color: var(--color-accent-subtle);
 	flex-shrink: 0;
 	margin: 0 var(--padding-mobile);
 	text-align: right;
@@ -293,7 +291,7 @@ footer {
 }
 
 .hero + .caption {
-	color: var(--color-caption-txt);
+	color: var(--color-accent-subtle);
 	margin: 0.5rem 0;
 }
 

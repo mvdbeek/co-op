@@ -16,6 +16,14 @@ uri   = "https://blog.samwhited.com"
 logo         = "images/logo.svg"
 description  = "An example site for the Co-op theme for Hugo."
 
+[params.style]
+
+accentPrimary   = "#81a1c1"
+accentSecondary = "#a3be8c"
+accentSubtle    = "#575757"
+backgroundDark  = "#232432"
+backgroundLight = "#fcfcfc"
+
 [params.contact]
 
 address   = "123 Fake Street, Clarkesville, GA 30523"

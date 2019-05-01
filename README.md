@@ -70,6 +70,16 @@ info bar at the top of the page.
 Any parameters that exist in the code but which are not documented here have not
 been finalized and may be removed at any time without warning.
 
+**style.accentPrimary:** The primary accent color (defaults to `#81a1c1`).
+
+**style.accentSecondary:** The secondary accent color used in the info bar (defaults to `#a3be8c`).
+
+**style.accentSubtle:** A subtle accent color for captions and borders (defaults to `#575757`).
+
+**style.backgroundDark:** A dark background and text color (defaults to `#232432`).
+
+**style.backgroundLight:** A light background and text color (defaults to `#fcfcfc`).
+
 
 ### Post params
 
@@ -98,30 +108,6 @@ like the following to your `config.toml`:
 [permalinks]
   post = "/blog/:slug"
 ```
-
-
-### Styles
-
-To change the style, the following CSS variables may be overridden by setting
-them on the `:root` CSS element (default values are shown):
-
-```css
-:root {
-	--color-accent: #d5262b;
-	--color-accent-secondary: #81b3ae;
-	--color-accent-subtle: #575757;
-	--color-caption-txt: #575757;
-	--color-dark-bg: #232432;
-	--color-dark-txt: #232432;
-	--color-light-bg: #fcfcfc;
-	--max-content-width: 900px;
-}
-```
-
-To insert your custom CSS file after the main file loaded by the theme, create a
-partial called `css.html`.
-Any variables not listed here may be removed from the main CSS file at any time
-without warning.
 
 
 ### Partials

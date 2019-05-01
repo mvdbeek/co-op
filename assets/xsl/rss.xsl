@@ -6,8 +6,12 @@
 				<meta charset="utf-8"/>
 				<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
 				<title><xsl:value-of select="rss/channel/title"/></title>
-				<link rel="stylesheet" href="../css/main.css"/>
-				<link rel="stylesheet" href="../css/rss.css"/>
+				{{- with $style := resources.Get "css/main.css" | resources.ExecuteAsTemplate "css/main.css" . | resources.Minify | resources.Fingerprint "sha256"}}
+				<link rel="stylesheet"
+					href="{{ $style.Permalink }}"
+					integrity="{{ $style.Data.Integrity }}"/>
+				{{- end }}
+				<link rel="stylesheet" href="{{ "css/rss.css" | absURL }}"/>
 			</head>
 			<body>
 				<header id="page-header">
