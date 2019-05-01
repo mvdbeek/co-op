@@ -19,11 +19,11 @@ description  = "An example site for the Co-op theme for Hugo."
 [params.contact]
 
 address   = "123 Fake Street, Clarkesville, GA 30523"
-email     = "soque@example.net"
+email     = "service@example.net"
 geo       = "geo:34.6103,-83.5421"
 telephone = "+1 (555) 867-5309"
 tel       = "tel:+15558675309"
-muc       = "soque@muc.example.net"
+muc       = "chat@example.net"
 
 [taxonomies]
 
