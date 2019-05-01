@@ -107,9 +107,10 @@ them on the `:root` CSS element (default values are shown):
 
 ```css
 :root {
-	--color-accent: #BF3211;
-	--color-accent-subtle: #D1D1D1;
-	--color-caption-txt: #545454;
+	--color-accent: #d5262b;
+	--color-accent-secondary: #81b3ae;
+	--color-accent-subtle: #575757;
+	--color-caption-txt: #575757;
 	--color-dark-bg: #232432;
 	--color-dark-txt: #232432;
 	--color-light-bg: #fcfcfc;

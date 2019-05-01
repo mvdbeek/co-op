@@ -6,6 +6,7 @@
 
 :root {
 	--color-accent: #d5262b;
+	--color-accent-secondary: #81b3ae;
 	--color-accent-subtle: #575757;
 	--color-caption-txt: #575757;
 	--color-dark-bg: #232432;
@@ -156,7 +157,7 @@ body a {
 }
 
 a:not(.button):hover {
-	color: var(--color-accent) !important;
+	color: var(--color-accent);
 }
 
 aside.info {
@@ -168,6 +169,10 @@ aside.info {
 aside.info a {
 	color: var(--color-light-bg);
 	text-decoration: none;
+}
+
+aside.info a:hover {
+	color: var(--color-accent-secondary);
 }
 
 aside.info, aside.info .vcard {
