@@ -11,7 +11,11 @@
 					href="{{ $style.Permalink }}"
 					integrity="{{ $style.Data.Integrity }}"/>
 				{{- end }}
-				<link rel="stylesheet" href="{{ "css/rss.css" | absURL }}"/>
+				{{- with $style := resources.Get "css/rss.css" | resources.ExecuteAsTemplate "css/rss.css" . | resources.Minify | resources.Fingerprint "sha256"}}
+				<link rel="stylesheet"
+					href="{{ $style.Permalink }}"
+					integrity="{{ $style.Data.Integrity }}"/>
+				{{- end }}
 			</head>
 			<body>
 				<header id="page-header">
