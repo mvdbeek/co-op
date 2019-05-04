@@ -44,7 +44,10 @@ config. For example:
 In addition to the standard parameters, the site may be configured by setting
 any of the following in the main config file:
 
-**logo**: Path to the main logo to be shown in the header.
+**logo**: Path to the main logo to be shown in the header and RSS feed.  The
+RSS spec claims this should have a maximum size of 144px wide and 400px tall,
+so it's probably best to use Atom instead (though sadly, with Hugo this
+requires more work that's outside the scope of this theme).
 
 **description:** A description to be shown in the `description` and
 `og:description` meta tags.

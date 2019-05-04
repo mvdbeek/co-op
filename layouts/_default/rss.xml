@@ -15,6 +15,14 @@
     <title>{{ if eq  .Title  .Site.Title }}{{ .Site.Title }}{{ else }}{{ with .Title }}{{.}} on {{ end }}{{ .Site.Title }}{{ end }}</title>
     <link>{{ .Permalink }}</link>
     <description>Recent posts from {{ if and .Title (ne  .Title  .Site.Title) }}{{ with .Title }}in {{.}} on {{ end }}{{ end }}{{ .Site.Title }}</description>
+    {{- with .Site.Params.logo }}
+    <image>
+      <url>{{ . | absURL }}</url>
+    </image>
+    {{- end }}
+    {{- with .Site.Params.icon }}
+    <atom:icon>{{ . | absURL }}</atom:icon>
+    {{- end }}
     <generator>Hugo</generator>{{ with .Site.LanguageCode }}
     <language>{{.}}</language>{{end}}{{ with .Site.Author.email }}
     <managingEditor>{{.}}{{ with $.Site.Author.name }} ({{.}}){{end}}</managingEditor>{{end}}{{ with .Site.Author.email }}
