@@ -370,6 +370,7 @@ a.button, button, input[type="button"], input[type="submit"], input[type="reset"
 	padding: 1rem 1.5rem;
 	text-decoration: none;
 	text-transform: uppercase;
+	transition: all 0.2s ease;
 	width: max-content;
 }
 
