@@ -98,6 +98,9 @@ tags will be linked at the bottom of the post.
 **noindex:** If set to anything but `false` adds a `noindex` meta tag to the
 page.
 
+**nofollow:** If set to anything but `false` adds a `nofollow` meta tag to the
+page.
+
 The following apply to blog posts only:
 
 **authors:** An array of author names (as strings) to be shown below this blog.

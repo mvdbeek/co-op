@@ -7,7 +7,9 @@
 
 	<meta name="viewport" content="width=device-width,initial-scale=1">
 	<meta name="Description" content="{{ with .Description }}{{ . }}{{ else }}{{if .IsPage}}{{ .Summary }}{{ else }}{{ with .Site.Params.description }}{{ . }}{{ end }}{{ end }}{{ end }}" />
-	{{ if .Params.noindex }}<meta name="robots" content="noindex"/>{{ end }}
+	{{- if or .Params.nofollow .Params.noindex }}
+	<meta name="robots" content="{{ if .Params.noindex }}noindex{{ end }}{{ if and .Params.nofollow .Params.noindex }},{{ end }}{{ if .Params.nofollow }}nofollow{{ end }}"/>
+	{{- end }}
 	{{ partial "meta.html" . }}
 	{{ partial "fonts.html" . }}
 
