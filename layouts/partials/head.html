@@ -22,10 +22,6 @@
 	<link href="{{ .Permalink }}" rel="alternate" type="application/rss+xml" title="{{ $.Site.Title }}"/>
 	<link href="{{ .Permalink }}" rel="feed" type="application/rss+xml" title="{{ $.Site.Title }}"/>
 	{{- end }}
-	{{- with .OutputFormats.Get "ATOM" }}
-	<link href="{{ .Permalink }}" rel="alternate" type="application/atom+xml" title="{{ $.Site.Title }}"/>
-	<link href="{{ .Permalink }}" rel="feed" type="application/atom+xml" title="{{ $.Site.Title }}"/>
-	{{- end }}
 
 	{{- with $style := resources.Get "css/main.css" | resources.ExecuteAsTemplate "css/main.css" . | resources.Minify | resources.Fingerprint "sha256"}}
 	<link rel="stylesheet"
