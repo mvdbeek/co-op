@@ -154,7 +154,7 @@ body a {
 	transition: all 0.2s ease;
 }
 
-a:not(.button, [role="button"]):hover {
+a:not(.button):not([role="button"]):hover {
 	color: var(--color-accent);
 }
 
