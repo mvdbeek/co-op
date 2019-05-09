@@ -97,9 +97,13 @@ tags will be linked at the bottom of the post.
 
 **noindex:** If set to anything but `false` adds a `noindex` meta tag to the
 page.
+If both **noindex** and **nofollow** are specified, and `enableRobotsTXT` is set
+to true in the config, the page is also disallowed in the `robots.txt` file.
 
 **nofollow:** If set to anything but `false` adds a `nofollow` meta tag to the
 page.
+If both **noindex** and **nofollow** are specified, and `enableRobotsTXT` is set
+to true in the config, the page is also disallowed in the `robots.txt` file.
 
 The following apply to blog posts only:
 
