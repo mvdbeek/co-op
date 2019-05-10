@@ -170,7 +170,7 @@ aside.info a {
 }
 
 aside.info a:hover {
-	color: var(--color-accent-secondary);
+	color: var(--color-accent-secondary) !important;
 }
 
 aside.info, aside.info .vcard {
