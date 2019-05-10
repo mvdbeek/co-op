@@ -154,10 +154,6 @@ body a {
 	transition: all 0.2s ease;
 }
 
-a:not(.button):not([role="button"]):hover {
-	color: var(--color-accent);
-}
-
 aside.info {
 	background-color: var(--color-dark-bg);
 	color: var(--color-light-bg);
@@ -167,10 +163,6 @@ aside.info {
 aside.info a {
 	color: var(--color-light-bg);
 	text-decoration: none;
-}
-
-aside.info a:hover {
-	color: var(--color-accent-secondary) !important;
 }
 
 aside.info, aside.info .vcard {
@@ -372,6 +364,14 @@ a.button, button, input[type="button"], input[type="submit"], input[type="reset"
 	text-transform: uppercase;
 	transition: all 0.2s ease;
 	width: max-content;
+}
+
+a:hover {
+	color: var(--color-accent);
+}
+
+aside.info a:hover {
+	color: var(--color-accent-secondary);
 }
 
 a.button:hover, button:hover, input[type="button"]:hover, input[type="submit"]:hover, input[type="reset"]:hover, *[role="button"]:hover {
