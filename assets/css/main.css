@@ -21,7 +21,7 @@
 	padding: 0;
 }
 
-:target {
+h1:target, h2:target, h3:target, h4:target, h5:target, h6:target {
 	border-bottom: 3px solid var(--color-accent);
 }
 
