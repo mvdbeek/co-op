@@ -44,6 +44,10 @@ body {
 	overflow-x: hidden;
 }
 
+ul ul, ol ul {
+	margin: 0 0 0 1rem;
+}
+
 h1 > a, h2 > a, h3 > a, h4 > a, h5 > a, h6 > a {
 	text-decoration: none;
 }
